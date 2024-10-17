@@ -1,6 +1,8 @@
 import uvicorn
 from fastapi import FastAPI, APIRouter
 
+from app.deposit.deposit_hendlers import router as deposit_router
+
 
 def create_app():
     app = FastAPI(
@@ -9,6 +11,7 @@ def create_app():
         title='Deposit Calculate v15'
     )
     app.include_router(ping_router)
+    app.include_router(deposit_router)
     return app
 
 

@@ -1,8 +1,7 @@
 from datetime import datetime, timedelta
 
-from app.deposit.deposit_schema import DepositSchema
-
 from app.config import settings
+from app.deposit.deposit_schema import DepositSchema
 
 
 def month_rate(rate: float) -> float:
