@@ -1,0 +1,31 @@
+
+services:
+
+  app:
+    container_name: fastapi_deposit
+    build: .
+    ports:
+      - '8000:8000'
+    volumes:
+      - .:/app
+    networks:
+      - backend
+
+  db:
+    image: postgres:16.3
+    container_name: postgres_deposit
+    restart: always
+    shm_size: 128mb
+    ports:
+      - '6432:5432'
+
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_DB: deposit
+    networks:
+      - backend
+
+networks:
+  backend:
+    driver: bridge
