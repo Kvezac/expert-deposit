@@ -77,8 +77,6 @@ all = ["email-validator (>=2.0.0)", "fastapi-cli[standard] (>=0.0.5)", "httpx (>
 standard = ["email-validator (>=2.0.0)", "fastapi-cli[standard] (>=0.0.5)", "httpx (>=0.23.0)", "jinja2 (>=2.11.2)", "python-multipart (>=0.0.7)", "uvicorn[standard] (>=0.12.0)"]
 
 [[package]]
-<<<<<<< HEAD
-=======
 name = "greenlet"
 version = "3.1.1"
 description = "Lightweight in-process concurrent programming"
@@ -165,7 +163,6 @@ docs = ["Sphinx", "furo"]
 test = ["objgraph", "psutil"]
 
 [[package]]
->>>>>>> eff2002 ( On branch master)
 name = "h11"
 version = "0.14.0"
 description = "A pure-Python, bring-your-own-I/O implementation of HTTP/1.1"
@@ -326,8 +323,6 @@ files = [
 ]
 
 [[package]]
-<<<<<<< HEAD
-=======
 name = "sqlalchemy"
 version = "2.0.36"
 description = "Database Abstraction Library"
@@ -423,7 +418,7 @@ pymysql = ["pymysql"]
 sqlcipher = ["sqlcipher3_binary"]
 
 [[package]]
->>>>>>> eff2002 ( On branch master)
+
 name = "starlette"
 version = "0.40.0"
 description = "The little ASGI library that shines."
@@ -472,8 +467,7 @@ standard = ["colorama (>=0.4)", "httptools (>=0.5.0)", "python-dotenv (>=0.13)",
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-<<<<<<< HEAD
-content-hash = "327784a76a49ce25a995ef62a9dabc43706270475ed41a21903e17e79828dc53"
-=======
+
+#content-hash = "327784a76a49ce25a995ef62a9dabc43706270475ed41a21903e17e79828dc53"
+
 content-hash = "a2fcbd86d37de1221052bd12ca841a5e53f64ceaac9efcd3c94a4176ea5c1444"
->>>>>>> eff2002 ( On branch master)
