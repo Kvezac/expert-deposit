@@ -9,6 +9,10 @@ readme = "README.md"
 python = "^3.11"
 fastapi = "^0.115.2"
 uvicorn = "^0.32.0"
+<<<<<<< HEAD
+=======
+sqlalchemy = "^2.0.36"
+>>>>>>> eff2002 ( On branch master)
 
 
 [build-system]
