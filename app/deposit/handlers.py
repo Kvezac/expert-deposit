@@ -3,9 +3,9 @@ from sqlalchemy import select
 from sqlalchemy.orm import Session
 
 from app.database.database import session
-from app.deposit.deposit_models import Deposit
-from app.deposit.deposit_schema import DepositCreationSchema, DepositSchema
-from app.deposit.deposit_service import calculate_deposit
+from app.deposit.models import Deposit
+from app.deposit.schema import DepositCreationSchema, DepositSchema
+from app.deposit.service import calculate_deposit
 
 router = APIRouter(prefix='/deposit', tags=['Deposit Get Info'])
 

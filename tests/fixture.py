@@ -1,4 +1,4 @@
-DATA = [
+data = [
     {"id": 1, "date": "31.01.2024", "periods": 3, "amount": 10_000, "rate": 6.4},
     {"id": 2, "date": "27.02.2024", "periods": 3, "amount": 20_000, "rate": 6},
     {"id": 3, "date": "31.03.2041", "periods": 60, "amount": 10_000, "rate": 6},

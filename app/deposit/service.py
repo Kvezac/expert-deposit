@@ -1,7 +1,7 @@
 from datetime import datetime, timedelta
 
 from app.config import settings
-from app.deposit.deposit_schema import DepositSchema
+from app.deposit.schema import DepositSchema
 
 
 def month_rate(rate: float) -> float:
@@ -25,6 +25,5 @@ def calculate_deposit(schema: DepositSchema) -> dict[str, float]:
         formatted_date = next_date.strftime(settings.DATE_FORMAT)
 
         results[formatted_date] = round(current_amount, 2)
-        # results[f'{next_date:%d.%m.%Y}'] = round(current_amount, 2)
 
     return results

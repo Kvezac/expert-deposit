@@ -2,21 +2,21 @@ from pydantic_settings import BaseSettings
 
 
 class Settings(BaseSettings):
-    DB_DRIVER: str
-    DB_HOST: str
-    DB_PORT: int
-    DB_USER: str
-    DB_PASS: str
-    DB_NAME: str
-    DATE_FORMAT: str
+    db_driver: str
+    db_host: str
+    db_port: int
+    db_user: str
+    db_pass: str
+    db_name: str
+    date_format: str
 
     @property
-    def DATABASE_URL(self):
-        return f"{self.DB_DRIVER}://{self.DB_USER}:{self.DB_PASS}@{self.DB_HOST}:{self.DB_PORT}/{self.DB_NAME}"
+    def database_url(self):
+        return f"{self.db_driver}://{self.db_user}:{self.db_pass}@{self.db_host}:{self.db_port}/{self.db_name}"
 
     @property
-    def DATE_FOMAT(self):
-        return self.DATE_FORMAT
+    def date_format(self):
+        return self.date_format
 
     class Config:
         env_file = ".env"
